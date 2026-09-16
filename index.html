@@ -23,6 +23,43 @@
 .f1media{display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:24px}.f1media>*{width:100%;aspect-ratio:1;object-fit:cover;border:4px solid rgba(249,246,241,.8);background:rgba(237,230,212,.2)}.playlist-icons a{text-decoration:none;font-size:2.5rem;transition:.2s}.playlist-icons a:hover{transform:scale(1.15)}.footer{text-align:center;opacity:.65;font-size:.8rem;margin-top:48px}
 @media(max-width:850px){.hobbies{grid-template-columns:repeat(3,1fr)}.gallery{grid-template-columns:repeat(3,1fr)}.gamecols{grid-template-columns:1fr}}
 @media(max-width:560px){.wrap{width:min(100% - 24px,980px);padding-top:20px}.home{padding:12px}.hobbies{grid-template-columns:repeat(2,1fr);gap:12px}.gallery{grid-template-columns:repeat(2,1fr)}.thumbs{grid-template-columns:1fr}.f1media{grid-template-columns:1fr}.bio,.detail{line-height:1.7}.page{background-attachment:scroll}.driver{width:100%}}
+#singing .gallery{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:16px;
+    flex-wrap:nowrap;
+}
+
+#singing .gallery .media{
+    width:300px;
+    aspect-ratio:1;
+    flex:0 1 300px;
+}
+
+#singing .gallery .media img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+}
+
+@media(max-width:850px){
+    #singing .gallery{
+        gap:12px;
+    }
+
+    #singing .gallery .media{
+        flex:1 1 0;
+        min-width:0;
+    }
+}
+
+@media(max-width:560px){
+    #singing .gallery{
+        gap:8px;
+    }
+}
 </style>
 </head>
 <body>
